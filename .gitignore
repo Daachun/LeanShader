@@ -1,0 +1,24 @@
+### Unity ###
+/*
+
+!/README.md
+!/unityProject.vrmanifest
+!/vive_role_bindings.cfg
+
+# General
+!/[Aa]ssets/
+!/[Pp]ackages/
+!/[Pp]roject[Ss]ettings/
+
+# Git
+!.gitignore
+!.gitattributes
+
+### macOS ###
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+### Windows ###
+Thumbs.db
