@@ -1,4 +1,4 @@
-﻿Shader "Daachun/L03/Lambert"
+﻿Shader "Daachun/L03/HalfLambert"
 {
     Properties {    // 材质面板参数
     }
@@ -38,6 +38,7 @@
                 float3 lDir = normalize(_WorldSpaceLightPos0.xyz);
                 float nDotl = dot(nDir,lDir);
                 float lambert = max(0.0,nDotl);
+                lambert = lambert * 0.5 + 0.5;
                 return float4(lambert, lambert, lambert, 1);
             }
             ENDCG
