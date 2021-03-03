@@ -20,5 +20,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _DotSize: 20
+    - _DotSize: 10
+    - _node_1496: 0
     m_Colors: []
