@@ -70,8 +70,7 @@ Shader "Unlit/HalfToon" {
                 float3 attenColor = attenuation * _LightColor0.xyz;
 ////// Emissive:
                 float _DotSize_var = UNITY_ACCESS_INSTANCED_PROP( Props, _DotSize );
-                float node_4137 = (max(0,dot(lightDirection,i.normalDir))*attenuation);
-                float node_1705 = round(pow(length((frac((float2((sceneUVs.x * 2 - 1)*(_ScreenParams.r/_ScreenParams.g), sceneUVs.y * 2 - 1).rg*_DotSize_var*partZ))*1.0+-0.5)),(node_4137*-2.5+2.0))); // 四舍五入
+                float node_1705 = round(pow(length((frac((float2((sceneUVs.x * 2 - 1)*(_ScreenParams.r/_ScreenParams.g), sceneUVs.y * 2 - 1).rg*_DotSize_var*partZ))*1.0+-0.5)),((max(0,dot(lightDirection,i.normalDir))*attenuation)*-2.5+2.0))); // 四舍五入
                 float3 emissive = float3(node_1705,node_1705,node_1705);
                 float3 finalColor = emissive;
                 fixed4 finalRGBA = fixed4(finalColor,1);
