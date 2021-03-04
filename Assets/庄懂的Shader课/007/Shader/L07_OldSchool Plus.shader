@@ -3,12 +3,12 @@
     Properties {    // 材质面板参数
         _MainCol("颜色",color)=(1.0,1.0,1.0,1.0)
         _LightCol("光照颜色",Color)=(1.0,1.0,1.0,1.0)
-        _SpecularPow("高光强度",range(1,90))=30
+        _SpecularPow("高光次幂",range(1,90))=30
         _EnvPow("环境光强度",range(0,1))=1
         _EnvUpCol("顶部环境光",Color)=(1.0,1.0,1.0,1.0)
         _EnvSideCol("侧面环境光",Color)=(0.5,0.5,0.5,1.0)
         _EnvDownCol("底部环境光",Color)=(0.0,0.0,0.0,1.0)
-        _Occulusion("AO贴图",2D) = "white"{}
+        _Occlusion("AO贴图",2D) = "white"{}
     }
     SubShader {
         Tags {
@@ -41,7 +41,7 @@
             uniform float3 _EnvUpCol;
             uniform float3 _EnvSideCol;
             uniform float3 _EnvDownCol;
-            uniform sampler2D _Occulusion;
+            uniform sampler2D _Occlusion;
 
             struct VertexInput {
                 float4 vertex : POSITION;   // 模型顶点信息
@@ -76,7 +76,7 @@
                 float upMask = max(0,i.nDirWS.y);
                 float downMask = max(0,-i.nDirWS.y);
                 float sideMask = 1-upMask-downMask;
-                float3 occ = tex2D(_Occulusion, i.uv);
+                float3 occ = tex2D(_Occlusion, i.uv);
                 float3 env = (_EnvUpCol * upMask + _EnvSideCol * sideMask + _EnvDownCol * downMask) * occ * _MainCol * _EnvPow;
 
                 return float4(ambient + env,1.0);

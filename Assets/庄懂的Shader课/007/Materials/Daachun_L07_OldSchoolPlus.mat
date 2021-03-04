@@ -19,16 +19,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Occlusion:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Occulusion:
         m_Texture: {fileID: 2800000, guid: eabfa8d88fe328f4b952fb81f530c4a4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _EnvPow: 1
-    - _SpecularPow: 30
+    - _EnvPow: 0.231
+    - _SpecularPow: 12.8
     m_Colors:
-    - _EnvDownCol: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
-    - _EnvSideCol: {r: 1, g: 1, b: 1, a: 1}
-    - _EnvUpCol: {r: 1, g: 1, b: 1, a: 1}
+    - _EnvDownCol: {r: 1, g: 0.85240555, b: 0.11792451, a: 1}
+    - _EnvSideCol: {r: 0.8325336, g: 0.8396226, b: 0.2653524, a: 1}
+    - _EnvUpCol: {r: 0.2028302, g: 0.8457822, b: 1, a: 1}
     - _LightCol: {r: 1, g: 1, b: 1, a: 1}
-    - _MainCol: {r: 0.31132078, g: 0.21880564, b: 0.21880564, a: 1}
+    - _MainCol: {r: 1, g: 1, b: 1, a: 1}
