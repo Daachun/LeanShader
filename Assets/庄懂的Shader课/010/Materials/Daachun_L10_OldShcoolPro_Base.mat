@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Daachun_L10_OldShcoolPro_Base
+  m_Shader: {fileID: 4800000, guid: f0051cfaa2de1a047b96f65b5b1f01ed, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Cubemap:
+        m_Texture: {fileID: 8900000, guid: b70128b17806b8a4c82cf16689f75e2f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmitTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 4d0e75170fd448547a4418cca03c5012, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecTex:
+        m_Texture: {fileID: 2800000, guid: 4d0e75170fd448547a4418cca03c5012, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CubemapMip: 1
+    - _EmitInt: 3.06
+    - _EnvDiffInt: 0.815
+    - _EnvSpecInt: 0.92
+    - _FresnelPow: 1.54
+    - _SpecPow: 31.2
+    m_Colors:
+    - _EnvDownCol: {r: 0.5, g: 0.39368513, b: 0.28537735, a: 1}
+    - _EnvSideCol: {r: 0.6698113, g: 0.56811434, b: 0.26855642, a: 1}
+    - _EnvUpCol: {r: 0.4009434, g: 0.8203072, b: 1, a: 1}
+    - _MainCol: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
